@@ -1,0 +1,40 @@
+{
+  "$schema": "../gen/schemas/mobile-schema.json",
+  "identifier": "mobile-capability",
+  "description": "Capability for the main window",
+  "windows": [
+    "main"
+  ],
+  "platforms": [
+    "iOS",
+    "android"
+  ],
+  "permissions": [
+    "app:default",
+    "dialog:allow-open",
+    "event:default",
+    "fs:default",
+    "image:default",
+    "menu:default",
+    "os:allow-arch",
+    "os:allow-family",
+    "os:allow-hostname",
+    "os:allow-os-type",
+    "os:allow-platform",
+    "os:allow-version",
+    "path:default",
+    "resources:default",
+    "shell:default",
+    "shell:allow-open",
+    "store:default",
+    "tray:default",
+    "window:default",
+    "window:allow-close",
+    "window:allow-minimize",
+    "window:allow-maximize",
+    "window:allow-start-dragging",
+    "window:allow-toggle-maximize",
+    "window:allow-start-dragging",
+    "webview:default"
+  ]
+}

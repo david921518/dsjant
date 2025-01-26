@@ -1,0 +1,121 @@
+{
+  "productName": "dsjant",
+  "version": "0.0.2",
+  "identifier": "com.koudaipc.dsjant",
+  "build": {
+    "beforeDevCommand": "pnpm vite:dev",
+    "devUrl": "http://localhost:11420",
+    "beforeBuildCommand": "pnpm vite:build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "dsjant",
+        "center": true,
+        "width": 800,
+        "height": 720,
+        "decorations": true,
+        "titleBarStyle": "Visible",
+        "hiddenTitle": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "android": {
+      "minSdkVersion": 24
+    },
+    "createUpdaterArtifacts": true,
+    "category": "Productivity",
+    "copyright": "Copyright (c) david921518 2023-2024. All rights reserved.",
+    "iOS": {
+      "minimumSystemVersion": "13.0"
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "linux": {
+      "appimage": {
+        "bundleMediaFramework": false,
+        "files": {}
+      },
+      "deb": {
+        "files": {}
+      },
+      "rpm": {
+        "epoch": 0,
+        "files": {},
+        "release": "1"
+      }
+    },
+    "macOS": {
+      "dmg": {
+        "appPosition": {
+          "x": 180,
+          "y": 170
+        },
+        "applicationFolderPosition": {
+          "x": 480,
+          "y": 170
+        },
+        "windowSize": {
+          "height": 400,
+          "width": 660
+        }
+      },
+      "files": {},
+      "hardenedRuntime": true,
+      "minimumSystemVersion": "10.13"
+    },
+    "publisher": "david921518",
+    "resources": [ "demo", "gitea" ],
+    "targets": "all",
+    "windows": {
+      "allowDowngrades": true,
+      "certificateThumbprint": null,
+      "digestAlgorithm": null,
+      "nsis": {
+        "compression": "lzma",
+        "displayLanguageSelector": true,
+        "installMode": "both",
+        "languages": [
+          "SimpChinese",
+          "English"
+        ]
+      },
+      "signCommand": null,
+      "timestampUrl": null,
+      "tsp": false,
+      "webviewInstallMode": {
+        "silent": true,
+        "type": "downloadBootstrapper"
+      },
+      "wix": {
+        "language": [
+          "en-US",
+          "zh-CN"
+        ]
+      }
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDZFNjBGMTUyNzE2NkE1OUIKUldTYnBXWnhVdkZnYmxjb0Q0U0g3YTlPam5WSHptbGhFL3AxUzFITWMzWlRWZHRMc3RkNDQxMlAK",
+      "endpoints": [
+        "https://github.com/david921518/dsjant/releases/download/latest/latest.json"
+      ]
+    }
+  }
+}
