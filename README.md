@@ -34,7 +34,7 @@
 
 ### 赞助
 
-[捐助【大史记】日记编辑器的开发](https://github.com/sponsors/dsjant)
+[PayPal 捐助【大史记】日记编辑器的开发](https://www.paypal.com/paypalme/david921518)
 
 ## 开发
 
